@@ -64,6 +64,8 @@ nav {
 #skills-coursework-table{
     width:50%;
     border-collapse: collapse;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 
@@ -83,6 +85,7 @@ nav {
 
 #projects ul{
     font-size: 17px;
+    margin-bottom: 30px;
 }
 
 
@@ -91,3 +94,9 @@ nav {
 }
 
 
+footer{
+  border-top: 1px solid black;
+  font-size: 17px;
+  text-align: center; 
+  padding: 20px; 
+}
