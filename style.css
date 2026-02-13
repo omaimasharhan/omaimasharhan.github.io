@@ -39,9 +39,18 @@ nav {
     gap: 20px;
   }
 
+  /*The paragraph inside #profile is black because the selector #profile p has higher specificity (ID + element) than the general p selector. 
+  The order of the rules does not matter here; specificity determines which rule ‘wins.*/
+
+  p {
+    font-size: 17px;
+    color: violet;
+  }
+
 
   #profile p {
     color: black;
+
 }
 
 
