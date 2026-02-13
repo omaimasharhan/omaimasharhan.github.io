@@ -14,7 +14,4 @@ Docker provides a full environment where I can run programs with all the depende
 
 ## 3. AI Attribution
 
-I used ChatGPT to help with setting the `target` attribute when linking to other websites in my portfolio.  
-
----
 I did not use any AI tools for this assignment.
