@@ -1,107 +1,153 @@
-body{
-    background-color: rgb(245, 245, 242);
+body {
+  background-color: rgb(245, 245, 242);
 }
 
+@media (max-width: 768px){
+  .navbar {
+    flex-direction: column;  
+    align-items: flex-start; 
+    gap: 15px;;
+    }
 
-h1{
-    padding-left: 20px;
-    padding-top: 50px;
-    padding-bottom:20px ;
-    border-bottom: 2px solid black;
-    font-style: italic;
-    font-size: 50px;
+  .navbar a {
+    padding: 10px 0; 
+    font-size: 16px; 
+    }
+
+    .header{
+      font-size: 20px;
+    }
+
+  #projects {
+    grid-template-columns: 1fr; 
+    justify-items: center;
+  }
+
+  #projects h3 {
+    font-size: 18px; 
+  }
+
+  #projects ul {
+    font-size: 16px; 
+  }
+
+  #projects img {
+    width: 100%; 
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
 }
 
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.navbar .logo {
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  font-style: italic;
+  font-size: 40px;
+}
 
-nav {
-    background-color: white;
-    border: 2px solid gray;
-    border-radius: 20px;
-    font-size: 17px;
-  }
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  font-size: 17px;
+}
 
-  nav a:hover{
-    color: blueviolet;
-  }
+nav a:hover {
+  color: red;
+}
 
+.header {
+  font-size: 25px;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
 
-  .header{
-    font-size: 25px;
-    padding-left: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-  }
-  
+#profile {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
 
-  #profile {
-    display: flex;  
-    align-items: center;
-    gap: 20px;
-  }
-
-  /*The paragraph inside #profile is black because the selector #profile p has higher specificity (ID + element) than the general p selector. 
+/*The paragraph inside #profile is black because the selector #profile p has higher specificity (ID + element) than the general p selector. 
   The order of the rules does not matter here; specificity determines which rule ‘wins.*/
 
-  p {
-    font-size: 17px;
-    color: violet;
-  }
 
 
-  #profile p {
-    color: black;
+#profile p {
+  color: black;
+  font-size: 17px;
+  padding: 10px;
+  line-height:24px ;
 }
 
-
-  #profile img {
-    width: 150px;
-    border: solid gray;
-    border-radius: 50%; 
-  }
-
-
-#skills-coursework-table{
-    width:50%;
-    border-collapse: collapse;
-    margin-top: 50px;
-    margin-bottom: 50px;
+#profile img {
+  width: 150px;
+  border: solid gray;
+  border-radius: 50%;
 }
 
+#skills-coursework-table {
+  width: 50%;
+  border-collapse: collapse;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
 
 #skills-coursework-table th,
 #skills-coursework-table td {
-    border: 1px solid gray;
-    padding: 12px;
+  border: 1px solid gray;
+  padding: 12px;
+}
+#projects{
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 30px;
+  padding: 20px;
+}
+#projects h3 {
+  font-style: italic;
+  font-size: 20px;
+  text-align: center;
+  border-bottom: 2px solid black;
 }
 
-
-#projects h3{
-    font-style: italic;
-    font-size: 20px;
-    padding-top: 10px;
+#projects ul {
+  font-size: 17px;
+  margin-bottom: 30px;
 }
 
-
-#projects ul{
-    font-size: 17px;
-    margin-bottom: 30px;
+#projects li {
+  padding-top: 5px;
 }
 
-
-#projects li{
-    padding-top: 5px;
+#projects img {
+  width: 300px;
+  height: auto;
+  justify-self: center;
 }
-
-
-footer{
+footer {
   border-top: 1px solid black;
   font-size: 17px;
-  text-align: center; 
-  padding: 20px; 
+  text-align: center;
+  padding: 20px;
 }
 
-footer a:hover{
-  color:blueviolet;
+footer a:hover {
+  color: blueviolet;
+}
+
+.parent {
+  color: red;
 }
