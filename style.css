@@ -39,7 +39,7 @@ body {
   }
 
   #skills-coursework-table {
-    width: 100%;
+    width: auto%;
     
   }
 
@@ -112,7 +112,7 @@ nav a:hover {
 }
 
 #skills-coursework-table {
-  width: 50%;
+  width: 60%;
   border-collapse: collapse;
   margin: 50 ps auto;
 }
