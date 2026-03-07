@@ -39,7 +39,8 @@ body {
   }
 
   #skills-coursework-table {
-    width: auto%;
+    width: 100;
+    table-layout: fixed;
     
   }
 
