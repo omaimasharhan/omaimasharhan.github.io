@@ -2,71 +2,6 @@ body {
   background-color: rgb(245, 245, 242);
 }
 
-@media (max-width: 768px){
-  .navbar {
-    flex-direction: column;  
-    align-items: flex-start; 
-    gap: 15px;;
-    }
-
-  .navbar a {
-    padding: 10px 0; 
-    font-size: 16px; 
-    }
-
-    .header{
-      font-size: 20px;
-    }
-
-  #projects {
-    grid-template-columns: 1fr; 
-    justify-items: center;
-  }
-
-  #projects h3 {
-    font-size: 18px; 
-  }
-
-  #projects ul {
-    font-size: 16px; 
-  }
-
-  #projects img {
-    width: 100%; 
-    height: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-  
-  #skill-coursework {
-    width: 100%;        /* section fills screen */
-    padding: 0;         
-    
-  }
-
-
-
-  #skills-coursework-table {
-    width: 100%;
-    
-  }
-
-  #skills-coursework-table th,
-  #skills-coursework-table td {
-    word-wrap: break-word;
-    padding: 8px;
-  }
-
-  #profile {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
- 
-
-}
-
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -110,13 +45,11 @@ nav a:hover {
 /*The paragraph inside #profile is black because the selector #profile p has higher specificity (ID + element) than the general p selector. 
   The order of the rules does not matter here; specificity determines which rule ‘wins.*/
 
-
-
 #profile p {
   color: black;
   font-size: 17px;
   padding: 10px;
-  line-height:24px ;
+  line-height: 24px;
 }
 
 #profile img {
@@ -128,7 +61,6 @@ nav a:hover {
 #skills-coursework-table {
   width: 60%;
   border-collapse: collapse;
-  
 }
 
 #skills-coursework-table th,
@@ -138,7 +70,7 @@ nav a:hover {
   padding: 12px;
 }
 
-#projects{
+#projects {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   gap: 30px;
@@ -179,4 +111,71 @@ footer a:hover {
 
 .parent {
   color: red;
+}
+
+
+
+@media (max-width: 768px){
+  .navbar {
+    flex-direction: column;  
+    align-items: flex-start; 
+    gap: 15px;;
+    }
+
+  .navbar a {
+    padding: 10px 0; 
+    font-size: 16px; 
+    }
+
+    .header{
+      font-size: 20px;
+    }
+
+  #projects {
+    grid-template-columns: 1fr; 
+    justify-items: center;
+  }
+
+  #projects h3 {
+    font-size: 18px; 
+  }
+
+  #projects ul {
+    font-size: 16px; 
+  }
+
+  #projects img {
+    width: 100%; 
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  #skill-coursework {
+    width: 100%;        /* section fills screen */
+    padding: 0;    
+    box-sizing: border-box;     
+    
+  }
+
+  #skills-coursework-table {
+    width: 100%;
+    table-layout: fixed; 
+    margin: 0;
+  }
+
+  #skills-coursework-table th,
+  #skills-coursework-table td {
+    word-wrap: break-word;
+    padding: 8px;
+  }
+
+  #profile {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+ 
+
 }
