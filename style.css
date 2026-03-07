@@ -40,7 +40,6 @@ body {
 
   #skills-coursework-table {
     width: 100%;
-    table-layout: fixed;
     
   }
 
@@ -116,7 +115,11 @@ nav a:hover {
   border: solid gray;
   border-radius: 50%;
 }
-
+#skill-coursework {
+  width: 100%;
+  padding: 0 20px; /* optional padding */
+  box-sizing: border-box; /* so padding doesn’t make it overflow */
+}
 #skills-coursework-table {
   width: 100%;
   border-collapse: collapse;
