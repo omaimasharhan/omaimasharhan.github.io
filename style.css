@@ -114,6 +114,7 @@ nav a:hover {
 
 #skills-coursework-table {
   width: 60%;
+  max-width: 800px;
   border-collapse: collapse;
   margin: 50px auto;
 }
