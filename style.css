@@ -123,11 +123,12 @@ nav a:hover {
 #skills-coursework-table {
   width: 100%;
   border-collapse: collapse;
-  margin: 50px auto;
+  table-layout: fixed;
 }
 
 #skills-coursework-table th,
 #skills-coursework-table td {
+  word-wrap: break-word;
   border: 1px solid gray;
   padding: 12px;
 }
