@@ -40,15 +40,14 @@ body {
   
   #skill-coursework {
     width: 100%;        /* section fills screen */
-    padding: 0;         /* remove extra padding */
-    box-sizing: border-box;
+    padding: 0;         
+    
   }
 
 
 
   #skills-coursework-table {
     width: 100%;
-    table-layout: fixed;
     
   }
 
