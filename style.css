@@ -167,7 +167,9 @@ footer a:hover {
 
   #projects {
     grid-template-columns: 1fr; 
-    justify-items: center;
+    justify-items: stretch;
+    padding: 0 10px;
+    width: 100%;
   }
 
   #projects h3 {
@@ -178,10 +180,10 @@ footer a:hover {
     font-size: 16px; 
   }
 
+  #projects p,
+  #projects ul,
   #projects img {
-    width: 100%; 
-    height: auto;
-  
+    width: 100%;
   }
   
  
