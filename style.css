@@ -134,6 +134,7 @@ nav a:hover {
 
 #projects img {
   width: 300px;
+  max-width: 300px;
   height: auto;
   justify-self: center;
 }
