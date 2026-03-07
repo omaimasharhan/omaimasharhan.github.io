@@ -37,15 +37,25 @@ body {
     margin-top: 10px;
     margin-bottom: 10px;
   }
+  
+  #skill-coursework {
+    width: 100%;        /* section fills screen */
+    padding: 0;         /* remove extra padding */
+    box-sizing: border-box;
+  }
+
+
 
   #skills-coursework-table {
     width: 100%;
+    table-layout: fixed;
     
   }
 
   #skills-coursework-table th,
   #skills-coursework-table td {
     word-wrap: break-word;
+    padding: 8px;
   }
 
   #profile {
@@ -115,15 +125,11 @@ nav a:hover {
   border: solid gray;
   border-radius: 50%;
 }
-#skill-coursework {
-  width: 100%;
-  padding: 0 20px; /* optional padding */
-  box-sizing: border-box; /* so padding doesn’t make it overflow */
-}
+
 #skills-coursework-table {
-  width: 100%;
+  width: 60%;
   border-collapse: collapse;
-  table-layout: fixed;
+  
 }
 
 #skills-coursework-table th,
@@ -132,6 +138,7 @@ nav a:hover {
   border: 1px solid gray;
   padding: 12px;
 }
+
 #projects{
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
