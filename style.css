@@ -44,6 +44,11 @@ body {
     
   }
 
+  #skills-coursework-table th,
+  #skills-coursework-table td {
+    word-wrap: break-word;
+  }
+
   #profile {
     flex-direction: column;
     align-items: center;
@@ -113,8 +118,7 @@ nav a:hover {
 }
 
 #skills-coursework-table {
-  width: 60%;
-  max-width: 800px;
+  width: 100%;
   border-collapse: collapse;
   margin: 50px auto;
 }
